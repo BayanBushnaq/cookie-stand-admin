@@ -28,4 +28,4 @@
 
 
 #### Pull Request Link:
-##### [pull request](https://github.com/BayanBushnaq/cookie-stand-admin/pull/1)
+##### [pull request](https://github.com/BayanBushnaq/cookie-stand-admin/pull/2)
