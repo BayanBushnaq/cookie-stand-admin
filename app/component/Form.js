@@ -7,6 +7,7 @@ export default function Form() {
     const [MaximumCustomers,setMaximumCustomers]= useState('4')
     const [Average,setAverage]= useState('2.5')
     const [allOutputs, setAllOutputs] = useState([]);
+    const [show,setShow] = useState(true)
 
     
     const handleLocation = (e) =>{
@@ -36,6 +37,10 @@ export default function Form() {
         console.log(output)
         
         
+       
+        
+        
+        
         
         
     }
@@ -54,18 +59,20 @@ export default function Form() {
         <input onChange={handleMinCustomer} type="text" id="MinimumCustomers" name="MinimumCustomers" placeholder="2"/> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span></span>
         <input onChange={handleMaxCustomer} type="text" id="MaximumCustomers" name="MaximumCustomers" placeholder="4"/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span></span>
         <input onChange={handleAvg} type="text" id="Average Cookies" name="AverageCookies" placeholder="2.5"/> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <span></span> 
-        <button type="submit" className='bg-emerald-400 text-3xl bg-contain bg-origin-content text-teal-900 rounded-md hover:bg-teal-400 px-6 py-1'>Create</button>
+        <button onClick={()=>setShow(false)} type="submit" className='bg-emerald-400 text-3xl bg-contain bg-origin-content text-teal-900 rounded-md hover:bg-teal-400 px-6 py-1'>Create</button>
       </form>
       </div>
       
       
-      <h3 className='text-zinc-400 text-base mt-40 text-center'>Report Table Coming Soon... </h3>
+      {show?<h3 className='text-zinc-400 text-base mt-40 text-center'>Report Table Coming Soon... </h3>:null}
+      
       <h3 className='text-center text-zinc-400 mb-20'>
+       
         {allOutputs.length > 0 &&
             allOutputs.map((item, index) => {
                     return(
                         
-                        <p> {item} </p>
+                        <p className='text-zinc-400 text-base mt-40 text-center'>{item}</p> 
                         
                     )
                     })}
