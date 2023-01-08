@@ -1,4 +1,7 @@
-
+// Main steps to create Context 
+// 1. create the provider(context), that will provide the global state to my app
+// 1.1 create the context
+// 1.2 create the context wrapper (provider)
 import { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
