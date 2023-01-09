@@ -26,7 +26,7 @@ export default function LoginForm() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       />
-      <div class="bg-blue-200 flex">
+      <div class="bg-blue-200 flex dark:bg-stone-400">
         <div class="flex-col flex ml-auto mr-auto items-center w-full lg:w-2/3 md:w-3/5">
           <h1 class="font-bold text-2xl my-10 text-white"> Login </h1>
           <form  class="mt-2 flex flex-col lg:w-1/2 w-8/12" onSubmit={submitHandler}>
@@ -69,12 +69,12 @@ export default function LoginForm() {
             >
               Forget Password ?
             </a>
-            <a
-              href="https://cookie-stands-project.herokuapp.com/api/token/"
+            <button
+            type= 'submit'
               class="bg-blue-400 py-4 text-center px-17 md:px-12 md:py-4 text-white rounded leading-tight text-xl md:text-base font-sans mt-4 mb-20"
             >
               Login
-            </a>
+            </button>
           </form>
         </div>
       </div>

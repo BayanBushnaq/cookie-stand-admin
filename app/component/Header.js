@@ -21,7 +21,8 @@ export default function Header() {
             />
             <span className='text-xl font-bold tracking-wide text-white uppercase'>Cookie Stand Admin</span>
             </Link>
-            <button onClick={toggleThemeHandler} type="submit" className='bg-stone-300 text-base bg-contain bg-origin-content
+            <button onClick={toggleThemeHandler} type="submit" className='bg-stone-300 text-base bg-contain
+             bg-origin-content
      text-teal-900 rounded-md hover:bg-orange-200 px-2 py-1 font-serif font-bold absolute top-3 
      left-2/4 ml-80 '>Theme</button> 
             </nav>

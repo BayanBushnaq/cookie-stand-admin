@@ -96,12 +96,12 @@ export default function Form() {
                         <p className='text-zinc-400 text-base mt-40 text-center  '>{item}</p>
                         )
                     })}
-                    </h3>
-                    <h3 className='text-center text-zinc-400 mb-20 '>
+                    {/* </h3>
+                    <h3 className='text-center text-zinc-400 mb-20 '> */}
        
                    
-                   </h3>
-                    <h3 className='text-center text-zinc-400 pb-20 '>
+                   {/* </h3>
+                    <h3 className='text-center text-zinc-400 pb-20 '> */}
                    </h3>
         
  
